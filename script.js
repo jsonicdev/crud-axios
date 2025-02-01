@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		try {
 			const response = await axios({
 				method: 'GET',
-				url: 'https://api.kazakhcrusader.ru/api/exercise/?student_id=1&exercise_id=2',
+				url: 'url',
 			})
 			studentsData = response.data.students
 			renderStudents(studentsData)
@@ -69,7 +69,7 @@ update.addEventListener('click', () => {
 		try {
 			const response = await axios({
 				method: 'PATCH',
-				url: 'https://api.kazakhcrusader.ru/api/exercise/?student_id=1&exercise_id=3',
+				url: 'url',
 				data: {
 					exercise_id: 3,
 					name: inputName.value,
@@ -96,7 +96,7 @@ deleteBtn.addEventListener('click', () => {
 		try {
 			const response = await axios({
 				method: 'DELETE',
-				url: 'https://api.kazakhcrusader.ru/api/exercise/?student_id=1&exercise_id=4',
+				url: 'url',
 				data: {
 					exercise_id: 4,
 				},
