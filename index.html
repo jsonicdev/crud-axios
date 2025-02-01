@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+		<script src="https://cdn.tailwindcss.com"></script>
+		<title>Document</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body class="p-6">
+		<div class="flex w-1/3 justify-center border border-black p-4 flex-col">
+			<h2>Task 1</h2>
+			<input
+				id="input"
+				type="text"
+				class="border border-black rounded-xl mt-3 border-2 focus:drop-shadow-xl px-2 bg-transparent"
+			/>
+			<button
+				id="button"
+				class="border border-black rounded-xl mt-5 w-32 hover:bg-black hover:text-white duration-300"
+			>
+				Sent
+			</button>
+		</div>
+		<div
+			class="flex w-1/2 justify-center border mt-3 border-black p-4 flex-col"
+		>
+			<h2>Task 2</h2>
+			<div id="container" class="rounded-xl pl-2 mt-2">Table</div>
+		</div>
+		<div
+			class="flex w-1/2 justify-center border mt-3 border-black p-4 flex-col"
+		>
+			<p>Task 3</p>
+			Name:
+			<input
+				id="inputName"
+				class="border border-black rounded-xl mt-3 border-2 focus:drop-shadow-xl px-2 bg-transparent"
+				type="text"
+			/>
+			Age:
+			<input
+				id="inputAge"
+				class="border border-black rounded-xl mt-3 border-2 focus:drop-shadow-xl px-2 bg-transparent"
+				type="text"
+			/>
+			Gender:
+			<input
+				id="inputGen"
+				class="border border-black rounded-xl mt-3 border-2 focus:drop-shadow-xl px-2 bg-transparent"
+				type="text"
+			/>
+			Email:
+			<input
+				id="inputEmail"
+				class="border border-black rounded-xl mt-3 border-2 focus:drop-shadow-xl px-2 bg-transparent"
+				type="text"
+			/>
+			Phone:
+			<input
+				id="inputPhone"
+				class="border border-black rounded-xl mt-3 border-2 focus:drop-shadow-xl px-2 bg-transparent"
+				type="text"
+			/>
+			<button
+				id="update"
+				class="border border-black rounded-xl mt-5 w-32 hover:bg-black hover:text-white duration-300 bg-transparent"
+			>
+				Update
+			</button>
+		</div>
+		<div
+			class="flex w-1/2 justify-center border mt-3 border-black p-4 flex-col"
+		>
+			Task 4
+			<button
+				id="deleteBtn"
+				class="border border-black rounded-xl mt-5 w-32 hover:bg-black hover:text-white duration-300"
+			>
+				Delete
+			</button>
+		</div>
+
+		<script src="script.js"></script>
+	</body>
+</html>
